@@ -1,0 +1,40 @@
+body {
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* Smooth hover on course cards */
+.course-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.course-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* Active nav link indicator */
+.nav-link.active {
+  color: #0d6efd !important;
+  font-weight: 600;
+}
+
+/* Remove outline on buttons */
+.btn:focus {
+  box-shadow: none;
+}
+
+/* Sticky top offset for detail cards */
+.sticky-top {
+  top: 80px !important;
+}
+
+/* Progress bar animation */
+.progress-bar {
+  transition: width 0.6s ease;
+}
+
+/* Table improvements */
+.table > :not(caption) > * > * {
+  padding: 0.85rem 1rem;
+  vertical-align: middle;
+}
