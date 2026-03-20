@@ -1,11 +1,5 @@
 # 🎓 EduLearn LMS — Full Stack MERN Application
 
-> **Final Project | Course: MERN Stack Web Development | Total Marks: 100**
-
-A complete, production-ready **Learning Management System** built with the MERN stack demonstrating real-world industry standards.
-
----
-
 ## 📋 Project Overview
 
 EduLearn LMS is a full-featured web application that supports three user roles — **Student**, **Instructor**, and **Admin** — each with dedicated dashboards and role-based access control. The system allows students to browse and enroll in courses, instructors to create and manage course content, and admins to oversee the entire platform.
@@ -132,7 +126,7 @@ PUT    /api/enrollments/:id/progress Update lesson progress      [Student]
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/lms-project.git
+git clone https://github.com/Shaytech232/lms-project.git
 cd lms-project
 ```
 
@@ -146,14 +140,9 @@ Create a `.env` file in `/backend`:
 ```env
 PORT=5000
 MONGO_URI=mongodb://localhost:27017/lms_db
-JWT_SECRET=your_super_secret_jwt_key_change_in_production
+JWT_SECRET=ShayanMERN_LMS_2024_JWT_Secret_Key_!@#$
 JWT_EXPIRE=7d
 NODE_ENV=development
-```
-
-Seed demo data (optional but recommended):
-```bash
-node seed.js
 ```
 
 Start the backend server:
@@ -188,8 +177,6 @@ The app will be available at `http://localhost:3000`.
 - **JWT tokens** are issued on login/register and stored in `localStorage`.
 - Every protected API route validates the token via the `protect` middleware.
 - Role-based access is enforced by the `authorize(...roles)` middleware.
-- **No hard-coded credentials** — all secrets are loaded from environment variables.
-
 ---
 
 ## 🔐 Demo Credentials
@@ -271,40 +258,3 @@ lms-project/
     ├── .env
     ├── .gitignore
     └── package.json
-```
-
----
-
-## 📊 Marking Scheme Coverage
-
-| Criteria | Marks | Implementation |
-|---|---|---|
-| UI/UX Design | 15 | Bootstrap 5 + React Bootstrap, gradient hero, responsive layout, card hover effects |
-| React Implementation | 15 | Functional components, hooks (useState, useEffect), Context API, React Router v6 |
-| Backend API Development | 20 | RESTful Express API, all required endpoints, error handling, Morgan logging |
-| Database Design | 15 | Mongoose models (User, Course, Enrollment) with relationships, validation, timestamps |
-| Authentication & Security | 15 | Bcrypt password hashing, JWT tokens, protected middleware, no hard-coded secrets |
-| Role-Based Functionality | 10 | 3 roles (Admin/Instructor/Student), role guards on frontend & backend |
-| Code Quality & Structure | 5 | MVC pattern, separated concerns (controllers/routes/middleware), consistent naming |
-| Deployment & Testing | 5 | Seed script, demo credentials, README with full setup instructions |
-| **Total** | **100** | ✅ |
-
----
-
-## ❌ Important Instructions Compliance
-
-- ✅ No plagiarism — all code written from scratch
-- ✅ Code is properly structured (MVC pattern)
-- ✅ No hard-coded credentials anywhere
-- ✅ Environment variables used for all secrets
-- ✅ Proper error handling on all routes
-
----
-
-## 🎯 Learning Outcomes Demonstrated
-
-- Complete MERN stack development
-- Full-stack integration (React ↔ Express ↔ MongoDB)
-- JWT Authentication & role-based authorization
-- Real-world project workflow (MVC, REST, env vars)
-- Industry-level coding practices
